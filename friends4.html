@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Friends Website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>My Friends</h1>
+  </header>
+  <style>
+    /* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+}
+
+section {
+  display: none;
+  margin-bottom: 20px;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Color Styles */
+section#friend1 {
+  background-color: #FFD700; /* Gold */
+}
+
+section#friend2 {
+  background-color: #00FF00; /* Lime */
+}
+
+section#friend3 {
+  background-color: #800080; /* Purple */
+}
+
+section#friend4 {
+  background-color: #FF4500; /* OrangeRed */
+}
+
+section#friend5 {
+  background-color: #4169E1; /* RoyalBlue */
+}
+
+section#friend6 {
+  background-color: #00FFFF; /* Cyan */
+}
+
+section#friend7 {
+  background-color: #FF69B4; /* HotPink */
+}
+
+section#friend8 {
+  background-color: #FF8C00; /* DarkOrange */
+}
+
+section#friend9 {
+  background-color: #808080; /* Gray */
+}
+
+section#friend10 {
+  background-color: #FF1493; /* DeepPink */
+}
+
+    </style>
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showFriend(1)"><h1>ALEX</h1></a></li>
+      <li><a href="#" onclick="showFriend(2)"><h1>BEN</h1></a></li>
+      <li><a href="#" onclick="showFriend(3)"><h1>CANDIS</h1></a></li>
+      <li><a href="#" onclick="showFriend(4)"><h1>DAVE</h1></a></li>
+      <li><a href="#" onclick="showFriend(5)"><h1>EVE</h1></a></li>
+      <li><a href="#" onclick="showFriend(6)"><h1>FIN</h1></a></li>
+      <li><a href="#" onclick="showFriend(7)"><h1>GWEN</h1></a></li>
+      <li><a href="#" onclick="showFriend(8)"><h1>HENRY</h1></a></li>
+      <li><a href="#" onclick="showFriend(9)"><h1>IVY</h1></a></li>
+      <li><a href="#" onclick="showFriend(10)"><h1>JOHN</h1></a></li>
+    </ul>
+  </nav>
+  <div>
+    <img src="https://img.freepik.com/premium-photo/children-s-friendship-four-little-school-students-two-boys-two-girls-stand-embrace-schoolyard_109285-10327.jpg?"
+        alt="FRIENDSHIP" class="center1">
+</div>
+ 
+  <main>
+    <section id="friend1">
+      <h2>ALEX</h2>
+      <table>
+        <tr>
+          <th>Activity</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Hiking</td>
+          <td>Loves exploring nature trails.</td>
+        </tr>
+        <tr>
+          <td>Playing guitar</td>
+          <td>Enjoys strumming melodies on the guitar.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="friend2">
+      <h2>BEN</h2>
+      <table>
+        <tr>
+          <th>Activity</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Cooking</td>
+          <td>A talented chef who creates delicious meals.</td>
+        </tr>
+        <tr>
+          <td>Photography</td>
+          <td>Passionate about capturing beautiful moments.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="friend3">
+      <h2>CANDIS</h2>
+      <table>
+        <tr>
+          <th>Activity</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Painting</td>
+          <td>Expresses creativity through various art forms.</td>
+        </tr>
+        <tr>
+          <td>Gardening</td>
+          <td>Enjoys cultivating beautiful plants and flowers.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="friend4">
+      <h2>DAVE</h2>
+      <table>
+        <tr>
+          <th>Activity</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Dancing</td>
+          <td>Passionate about various dance styles.</td>
+        </tr>
+        <tr>
+          <td>Reading</td>
+          <td>Enjoys getting lost in a good book.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="friend5">
+      <h2>EVE</h2>
+      <table>
+        <tr>
+          <th>Activity</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Cycling</td>
+          <td>Enjoys long rides and exploring new routes.</td>
+        </tr>
+        <tr>
+          <td>Paintball</td>
+          <td>Loves the adrenaline rush of paintball battles.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="friend6">
+      <h2>FIN</h2>
+      <table>
+        <tr>
+          <th>Activity</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Yoga</td>
+          <td>Practices yoga for relaxation and mindfulness.</td>
+        </tr>
+        <tr>
+          <td>Horseback riding</td>
+          <td>Enjoys horseback riding in the countryside.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="friend7">
+      <h2>GWEN</h2>
+      <table>
+        <tr>
+          <th>Activity</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Singing</td>
+          <td>Has a beautiful voice and loves to sing.</td>
+        </tr>
+        <tr>
+          <td>Volunteering</td>
+          <td>Passionate about giving back to the community.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="friend8">
+      <h2>HENRY</h2>
+      <table>
+        <tr>
+          <th>Activity</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Swimming</td>
+          <td>Loves catching waves and riding the swim.</td>
+        </tr>
+        <tr>
+          <td>Camping</td>
+          <td>Enjoys spending time in the great outdoors.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="friend9">
+      <h2>IVY</h2>
+      <table>
+        <tr>
+          <th>Activity</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Traveling</td>
+          <td>Enjoys exploring new places and experiencing different cultures.</td>
+        </tr>
+        <tr>
+          <td>Baking</td>
+          <td>Passionate about creating delicious baked goods.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="friend10">
+      <h2>JOHN</h2>
+      <table>
+        <tr>
+          <th>Activity</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Puzzles</td>
+          <td>Loves solving challenging puzzles and brain teasers.</td>
+        </tr>
+        <tr>
+          <td>Fishing</td>
+          <td>Enjoys spending time by the water, fishing for relaxation.</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+</body>
+</html>
