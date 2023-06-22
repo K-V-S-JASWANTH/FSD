@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Friends Website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* Navigation Styles */
+    nav {
+      background-color: #444;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      /* Make the list items equidistant */
+
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      display: inline-block;
+      padding: 0px 10px;
+      border-radius: 5px;
+      background-color: #4169E1;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #777;
+    }
+
+    /* Global Styles */
+    body {
+      font-family: Papyrus;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    /* Main Content Styles */
+    main {
+      padding: 20px;
+    }
+
+    section {
+      display: none;
+      margin-bottom: 20px;
+    }
+
+    /* Table Styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table th,
+    table td {
+      padding: 10px;
+      border: 10px solid #ddd;
+    }
+
+    /* Color Styles */
+    section#friend1 {
+      background-color: #ff4d00;
+      /* Gold */
+    }
+
+    section#friend2 {
+      background-color: #ffc400;
+      /* Lime */
+    }
+
+    section#friend3 {
+      background-color: #98f907;
+      /* Purple */
+    }
+
+    section#friend4 {
+      background-color: #00ff91;
+      /* OrangeRed */
+    }
+
+    section#friend5 {
+      background-color: #08f0e0;
+      /* RoyalBlue */
+    }
+
+    section#friend6 {
+      background-color: #0066ff;
+      /* Cyan */
+    }
+
+    section#friend7 {
+      background-color: #a869ff;
+      /* HotPink */
+    }
+
+    section#friend8 {
+      background-color: #e100ff;
+      /* DarkOrange */
+    }
+
+    section#friend9 {
+      background-color: #e31a82;
+      /* Gray */
+    }
+
+    section#friend10 {
+      background-color: #ff1414;
+      /* DeepPink */
+    }
+  </style>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>My Friends</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showFriend(1)">
+          <h1>ALEX</h1>
+        </a></li>
+      <li><a href="#" onclick="showFriend(2)">
+          <h1>BEN</h1>
+        </a></li>
+      <li><a href="#" onclick="showFriend(3)">
+          <h1>CANDIS</h1>
+        </a></li>
+      <li><a href="#" onclick="showFriend(4)">
+          <h1>DAVE</h1>
+        </a></li>
+      <li><a href="#" onclick="showFriend(5)">
+          <h1>EVE</h1>
+        </a></li>
+      <li><a href="#" onclick="showFriend(6)">
+          <h1>FIN</h1>
+        </a></li>
+      <li><a href="#" onclick="showFriend(7)">
+          <h1>GWEN</h1>
+        </a></li>
+      <li><a href="#" onclick="showFriend(8)">
+          <h1>HENRY</h1>
+        </a></li>
+      <li><a href="#" onclick="showFriend(9)">
+          <h1>IVY</h1>
+        </a></li>
+      <li><a href="#" onclick="showFriend(10)">
+          <h1>JOHN</h1>
+        </a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="friend1">
+      <h2>Alex</h2>
+      <div class="center-image">
+        <img src="https://images.pexels.com/photos/4890259/pexels-photo-4890259.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Alex">
+      </div>
+      <table>
+        <tr>
+          <th>Age</th>
+          <th>Hobbies</th>
+          <th>Favorite Music</th>
+          <th>Favorite Books</th>
+          <th>Favorite Movies</th>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>Playing Guitar, Cooking, Reading</td>
+          <td>Rock, Jazz, Classical</td>
+          <td>The Great Gatsby, To Kill a Mockingbird, 1984</td>
+          <td>Pulp Fiction, The Shawshank Redemption, Inception</td>
+        </tr>
+      </table>
+    </section>
+    <section id="friend2">
+      <h2>Ben</h2>
+      <div class="center-image">
+        <img src="https://images.pexels.com/photos/3754285/pexels-photo-3754285.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Ben">
+      </div>
+      <table>
+        <tr>
+          <th>Age</th>
+          <th>Hobbies</th>
+          <th>Favorite Music</th>
+          <th>Favorite Books</th>
+          <th>Favorite Movies</th>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>Hiking, Painting, Playing Piano</td>
+          <td>Indie Rock, Alternative, Folk</td>
+          <td>The Catcher in the Rye, 1984, The Alchemist</td>
+          <td>Eternal Sunshine of the Spotless Mind, Fight Club, The Matrix</td>
+        </tr>
+      </table>
+    </section>
+    <section id="friend3">
+      <h2>Candis</h2>
+      <div class="center-image">
+        <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Candis">
+      </div>
+      <table>
+        <tr>
+          <th>Age</th>
+          <th>Hobbies</th>
+          <th>Favorite Music</th>
+          <th>Favorite Books</th>
+          <th>Favorite Movies</th>
+        </tr>
+        <tr>
+          <td>28</td>
+          <td>Gardening, Photography, Writing</td>
+          <td>Indie Folk, Jazz, Soul</td>
+          <td>The Secret Garden, Pride and Prejudice, The Little Prince</td>
+          <td>Amélie, La La Land, The Grand Budapest Hotel</td>
+        </tr>
+      </table>
+    </section>
+    <section id="friend4">
+      <h2>Dave</h2>
+      <div class="center-image">
+        <img src="https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dave">
+      </div>
+      <table>
+        <tr>
+          <th>Age</th>
+          <th>Hobbies</th>
+          <th>Favorite Music</th>
+          <th>Favorite Books</th>
+          <th>Favorite Movies</th>
+        </tr>
+        <tr>
+          <td>33</td>
+          <td>Running, Playing Chess, Cooking</td>
+          <td>Classical, Jazz, Ambient</td>
+          <td>The Odyssey, Crime and Punishment, The Brothers Karamazov</td>
+          <td>The Godfather, Schindler's List, The Dark Knight</td>
+        </tr>
+      </table>
+    </section>
+    <section id="friend5">
+      <h2>Eve</h2>
+      <div class="center-image">
+        <img src="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Eve">
+      </div>
+      <table>
+        <tr>
+          <th>Age</th>
+          <th>Hobbies</th>
+          <th>Favorite Music</th>
+          <th>Favorite Books</th>
+          <th>Favorite Movies</th>
+        </tr>
+        <tr>
+          <td>29</td>
+          <td>Painting, Playing Violin, Writing</td>
+          <td>Classical, Opera, Soundtracks</td>
+          <td>Anna Karenina, Wuthering Heights, The Picture of Dorian Gray</td>
+          <td>Black Swan, The Pianist, The Lord of the Rings Trilogy</td>
+        </tr>
+      </table>
+    </section>
+    <section id="friend6">
+      <h2>Fin</h2>
+      <div class="center-image">
+        <img src="https://images.pexels.com/photos/6968548/pexels-photo-6968548.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fin">
+      </div>
+      <table>
+        <tr>
+          <th>Age</th>
+          <th>Hobbies</th>
+          <th>Favorite Music</th>
+          <th>Favorite Books</th>
+          <th>Favorite Movies</th>
+        </tr>
+        <tr>
+          <td>31</td>
+          <td>Surfing, Yoga, Meditation</td>
+          <td>Reggae, Ska, World Music</td>
+          <td>Siddhartha, The Power of Now, Zen and the Art of Motorcycle Maintenance</td>
+          <td>The Big Lebowski, Into the Wild, The Beach</td>
+        </tr>
+      </table>
+    </section>
+    <section id="friend7">
+      <h2>Gwen</h2>
+      <div class="center-image">
+        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gwen">
+      </div>
+      <table>
+        <tr>
+          <th>Age</th>
+          <th>Hobbies</th>
+          <th>Favorite Music</th>
+          <th>Favorite Books</th>
+          <th>Favorite Movies</th>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>Dancing, Cooking, Writing</td>
+          <td>Pop, Hip Hop, EDM</td>
+          <td>Harry Potter series, The Hunger Games, The Fault in Our Stars</td>
+          <td>La La Land, Mamma Mia!, Crazy Rich Asians</td>
+        </tr>
+      </table>
+    </section>
+    <section id="friend8">
+      <h2>Henry</h2>
+      <div class="center-image">
+        <img src="https://images.pexels.com/photos/5490235/pexels-photo-5490235.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Henry">
+      </div>
+      <table>
+        <tr>
+          <th>Age</th>
+          <th>Hobbies</th>
+          <th>Favorite Music</th>
+          <th>Favorite Books</th>
+          <th>Favorite Movies</th>
+        </tr>
+        <tr>
+          <td>34</td>
+          <td>Cycling, Playing Guitar, Traveling</td>
+          <td>Rock, Blues, Metal</td>
+          <td>The Lord of the Rings Trilogy, Brave New World, The Hobbit</td>
+          <td>The Shawshank Redemption, Fight Club, Gladiator</td>
+        </tr>
+      </table>
+    </section>
+    <section id="friend9">
+      <h2>Ivy</h2>
+      <div class="center-image">
+        <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Ivy">
+      </div>
+      <table>
+        <tr>
+          <th>Age</th>
+          <th>Hobbies</th>
+          <th>Favorite Music</th>
+          <th>Favorite Books</th>
+          <th>Favorite Movies</th>
+        </tr>
+        <tr>
+          <td>26</td>
+          <td>Photography, Playing Drums, Painting</td>
+          <td>Alternative Rock, Indie, Grunge</td>
+          <td>Brave New World, The Catcher in the Rye, The Bell Jar</td>
+          <td>Fight Club, The Perks of Being a Wallflower, Her</td>
+        </tr>
+      </table>
+    </section>
+    <section id="friend10">
+      <h2>John</h2>
+      <div class="center-image">
+        <img src="https://images.pexels.com/photos/10513822/pexels-photo-10513822.jpeg?auto=compress&cs=tinysrgb&w=600" alt="John">
+      </div>
+      <table>
+        <tr>
+          <th>Age</th>
+          <th>Hobbies</th>
+          <th>Favorite Music</th>
+          <th>Favorite Books</th>
+          <th>Favorite Movies</th>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>Cooking, Soccer, Watching Anime</td>
+          <td>Pop, Hip Hop, Electronic</td>
+          <td>One Piece, Harry Potter series, The Art of War</td>
+          <td>Your Name, Avengers: Endgame, The Dark Knight Rises</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+</body>
+
+</html>
