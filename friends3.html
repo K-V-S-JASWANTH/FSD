@@ -87,105 +87,44 @@
     /* Color Styles */
     section#friend1 {
       background-color: #ff4d00;
-      /* Gold */
     }
 
     section#friend2 {
       background-color: #ffc400;
-      /* Lime */
     }
 
     section#friend3 {
       background-color: #98f907;
-      /* Purple */
     }
 
     section#friend4 {
       background-color: #00ff91;
-      /* OrangeRed */
     }
 
     section#friend5 {
       background-color: #08f0e0;
-      /* RoyalBlue */
     }
 
     section#friend6 {
       background-color: #0066ff;
-      /* Cyan */
     }
 
     section#friend7 {
       background-color: #a869ff;
-      /* HotPink */
     }
 
     section#friend8 {
       background-color: #e100ff;
-      /* DarkOrange */
     }
 
     section#friend9 {
       background-color: #e31a82;
-      /* Gray */
     }
 
     section#friend10 {
       background-color: #ff1414;
-      /* DeepPink */
     }
-    /* The switch (toggle) */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-/* Hide the default checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider (circle) */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: .4s;
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-/* Dark mode styles */
-.slider.round:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:checked + .slider:before {
-  transform: translateX(26px);
-}
-
+    
   </style>
   <script src="script.js"></script>
 </head>
@@ -194,10 +133,6 @@ input:checked + .slider:before {
   <header>
     <h1>My Friends</h1>
   </header>
-  <label class="switch">
-  <input type="checkbox" id="darkModeToggle">
-  <span class="slider round"></span>
-</label>
   <nav>
     <ul>
       <li><a href="#" onclick="showFriend(1)">
@@ -458,5 +393,4 @@ input:checked + .slider:before {
     <p>© 2023 My Friends Website. All rights reserved.</p>
   </footer>
 </body>
-
 </html>
